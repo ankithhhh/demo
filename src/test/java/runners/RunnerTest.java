@@ -10,10 +10,10 @@ import static io.cucumber.junit.platform.engine.Constants.*;
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectClasspathResource("features/FirstSprint/PostRequest.feature")
-@SelectClasspathResource("features/FirstSprint/GetRequest.feature")
-@SelectClasspathResource("features/FirstSprint/PutRequest.feature")
-@SelectClasspathResource("features/FirstSprint/DeleteRequest.feature")
+@SelectClasspathResource("feature/FirstSprint/PostRequest.feature")
+@SelectClasspathResource("feature/FirstSprint/GetRequest.feature")
+@SelectClasspathResource("feature/FirstSprint/PutRequest.feature")
+@SelectClasspathResource("feature/FirstSprint/DeleteRequest.feature")
 
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "steps,hooks") 
 @ConfigurationParameter(key = "cucumber.plugin", value = "pretty, html:target/cucumber-reports.html, json:target/cucumber-reports.json")
