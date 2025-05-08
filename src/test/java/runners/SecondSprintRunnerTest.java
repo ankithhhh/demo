@@ -9,13 +9,13 @@ import static io.cucumber.junit.platform.engine.Constants.*;
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectClasspathResource("features/SecondSprint/PostRequest.feature")
-@SelectClasspathResource("features/SecondSprint/GetRequest.feature")
-@SelectClasspathResource("features/SecondSprint/PutRequest.feature")
-@SelectClasspathResource("features/SecondSprint/DeleteRequest.feature")
+@SelectClasspathResource("feature/SecondSprint/PostRequest.feature")
+@SelectClasspathResource("feature/SecondSprint/GetRequest.feature")
+@SelectClasspathResource("feature/SecondSprint/PutRequest.feature")
+@SelectClasspathResource("feature/SecondSprint/DeleteRequest.feature")
 
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "steps,hooks") 
 @ConfigurationParameter(key = "cucumber.plugin", value = "pretty, html:target/cucumber-reports.html, json:target/cucumber-reports.json")
 @ConfigurationParameter(key = "cucumber.publish", value = "true")
-public class SecondSprintRunner {
+public class SecondSprintRunnerTest {
 }
